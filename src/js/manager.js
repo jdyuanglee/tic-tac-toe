@@ -53,6 +53,23 @@ function start() {
 	globals.game.start();
 }
 
+function popup() {
+	var modal = document.getElementById('myModal');
+	var span = document.getElementsByClassName("close")[0];
+
+	modal.style.display = "block";
+	
+	span.onclick = function () {
+		modal.style.display = "none";
+	}
+
+	window.onclick = function (event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+}
+
 
 
 function readTree() {
@@ -68,7 +85,11 @@ function readTree() {
 			case "upgrade":
 				console.log("Upgrade");
 				break;
-			case "set difficulty": 
+			case "popup":
+				console.log("Popup");
+				popup();
+				
+			case "set difficulty":
 				console.log("set difficulty", action.difficulty);
 				difficulty = action.difficulty;
 				break;
@@ -78,7 +99,7 @@ function readTree() {
 	}
 }
 
-globals.onWin = function(outcome) {
+globals.onWin = function (outcome) {
 	let aiToken = globals.game.playerToken === "X" ? "O" : "X";
 	if (outcome === globals.game.playerToken) {
 		globals.history += "W";

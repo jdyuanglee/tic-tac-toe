@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
-	<head>
-    <title>Tic-Tac-Toe</title>
-    <link rel="stylesheet" href="dist/css/main.css">
-	</head>
 
-	<body>
-		<div class="a-root">
-				<img src="src/images/earth.gif" alt="earth" class="globe a-globe-1">
-				<img src="src/images/earth.gif" alt="earth" class="globe a-globe-1">
-				<img src="src/images/earth.gif" alt="earth" class="globe a-globe-1">
-				<img src="src/images/earth.gif" alt="earth" class="globe a-globe-1">
-				<img src="src/images/earth.gif" alt="earth" class="globe a-globe-1">
-				<img src="src/images/earth.gif" alt="earth" class="globe a-globe-1">
-				<img src="src/images/earth.gif" alt="earth" class="globe a-globe-1">
-				<img src="src/images/earth.gif" alt="earth" class="globe a-globe-1">
-				<img src="src/images/earth.gif" alt="earth" class="globe a-globe-1">
-				<img src="src/images/earth.gif" alt="earth" class="globe a-globe-1">	
-				<img src="src/images/earth.gif" alt="earth" class="globe a-globe-2">
-			<div class="a-welcome">welcome to xoox, the smartest tic-tac-toe technology on the web!</div>
-			<img src="./src/images/word-art.png" alt="XooX" class="a-title">
+<head>
+	<title>Tic-Tac-Toe</title>
+	<link rel="stylesheet" href="dist/css/main.css">
+</head>
+
+<body>
+	<div class="a-root">
+		<img src="src/images/earth.gif" alt="earth" class="globe a-globe-1">
+		<img src="src/images/earth.gif" alt="earth" class="globe a-globe-1">
+		<img src="src/images/earth.gif" alt="earth" class="globe a-globe-1">
+		<img src="src/images/earth.gif" alt="earth" class="globe a-globe-1">
+		<img src="src/images/earth.gif" alt="earth" class="globe a-globe-1">
+		<img src="src/images/earth.gif" alt="earth" class="globe a-globe-1">
+		<img src="src/images/earth.gif" alt="earth" class="globe a-globe-1">
+		<img src="src/images/earth.gif" alt="earth" class="globe a-globe-1">
+		<img src="src/images/earth.gif" alt="earth" class="globe a-globe-1">
+		<img src="src/images/earth.gif" alt="earth" class="globe a-globe-1">
+		<img src="src/images/earth.gif" alt="earth" class="globe a-globe-2">
+		<div class="a-welcome">welcome to xoox, the smartest tic-tac-toe technology on the web!</div>
+		<img src="./src/images/word-art.png" alt="XooX" class="a-title">
 		<div class="a-main-container main-container">
 			<div class="board">
 				<!-- data-indx following cell divs represents cell index in 1D array representation -->
@@ -34,24 +35,42 @@
 				<div class="cell" data-indx="8"></div>
 			</div>
 
-			
+
 
 			<div class="control">
-        <div class="start">Start</div>
+				<div class="start">Start</div>
 			</div>
 		</div>
+
+		<!-- Popup content -->
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close">&times;</span>
+					<h2>YOU WON!!!!!!</h2>
+				</div>
+				<div class="modal-body">
+					<p>You will bring to the future</p>
+					<p>Welcome to the tictactoe from the year of 2090</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+
 		<!-- Start of CuterCounter Code -->
-		<a class="a-counter" href="http://www.cutercounter.com/" target="_blank"><img src="http://www.cutercounter.com/hit.php?id=guncoax&nd=8&style=38" border="0" alt="hit counter"></a>
+		<a class="a-counter" href="http://www.cutercounter.com/" target="_blank"><img
+				src="http://www.cutercounter.com/hit.php?id=guncoax&nd=8&style=38" border="0" alt="hit counter"></a>
 		<!-- End of CuterCounter Code -->
 		<a href="http://web.archive.org/web/20051126054550/http://www.uglytub.com/Welcome.htm">
-		<img src="src/images/tub.png" alt="tub" class="tub banner-ad">
-	</a>
+			<img src="src/images/tub.png" alt="tub" class="tub banner-ad">
+		</a>
 		<img src="src/images/barf.jpeg" alt="ad" class="banner-ad">
 		<img src="src/images/numba1.gif" alt="counter" class="banner-ad">
 	</div>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="dist/js/script.js"></script>
-	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="dist/js/script.js"></script>
+</body>
 
 </html>
